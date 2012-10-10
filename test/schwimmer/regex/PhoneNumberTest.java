@@ -2,7 +2,6 @@ package schwimmer.regex;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
-import junit.framework.Assert;
 
 import org.junit.Test;
 
