@@ -20,7 +20,8 @@ public class DictionaryLookup {
 	public DictionaryLookup(String filename) throws FileNotFoundException,
 			IOException {
 		List<String> list = IOUtils.readLines(new FileInputStream(filename));
-		words = (String[]) list.toArray();
+		words = (String[]) list.toArray(new String[0]);
+		map = new HashMap<String, Boolean>();
 		for (String s : words) {
 			map.put(s, Boolean.TRUE);
 		}
