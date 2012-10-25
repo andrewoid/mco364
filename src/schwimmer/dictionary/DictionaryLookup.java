@@ -50,7 +50,8 @@ public class DictionaryLookup {
 	}
 
 	public String getRandomString() {
-		return RandomStringUtils.randomAlphabetic(10).toLowerCase();
+		return RandomStringUtils.randomAlphabetic(random.nextInt(4) + 4)
+				.toLowerCase();
 	}
 
 }
