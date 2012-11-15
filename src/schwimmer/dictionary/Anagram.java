@@ -11,9 +11,13 @@ public class Anagram {
 		return Arrays.equals(sortString(a), sortString(b));
 	}
 
-	public char[] sortString(String s) {
+	public static char[] sortString(String s) {
 		char[] c = s.toCharArray();
 		Arrays.sort(c);
 		return c;
+	}
+
+	public static String getSortedWord(String word) {
+		return new String(sortString(word));
 	}
 }
